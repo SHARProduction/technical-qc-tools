@@ -1,0 +1,42 @@
+{
+  "preset": {
+    "id": "synthetic-web",
+    "version": "1.0.0",
+    "sampleRate": 48000,
+    "bitDepth": 24,
+    "channelLayout": "stereo",
+    "loudness": {
+      "unit": "LUFS",
+      "target": -16,
+      "tolerance": 1
+    },
+    "requiredStems": [
+      "mix",
+      "m&e"
+    ]
+  },
+  "assets": [
+    {
+      "id": "mix.wav",
+      "stem": "mix",
+      "sampleRate": 48000,
+      "bitDepth": 24,
+      "channelLayout": "stereo",
+      "loudness": {
+        "unit": "LUFS",
+        "value": -16
+      }
+    },
+    {
+      "id": "me.wav",
+      "stem": "m&e",
+      "sampleRate": 48000,
+      "bitDepth": 24,
+      "channelLayout": "stereo",
+      "loudness": {
+        "unit": "LUFS",
+        "value": -15.5
+      }
+    }
+  ]
+}

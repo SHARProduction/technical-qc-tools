@@ -1,0 +1,18 @@
+{
+  "preset": {
+    "id": "x",
+    "version": "1",
+    "sampleRate": 48000,
+    "bitDepth": 24,
+    "channelLayout": "stereo",
+    "loudness": {
+      "unit": "LUFS",
+      "target": -16,
+      "tolerance": 1
+    },
+    "requiredStems": [
+      "m&e"
+    ]
+  },
+  "assets": []
+}

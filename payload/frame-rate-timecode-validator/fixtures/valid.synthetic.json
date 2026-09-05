@@ -1,0 +1,7 @@
+{
+  "frameRate": "29.97",
+  "dropFrame": true,
+  "startTimecode": "00:01:00;02",
+  "endTimecode": "00:01:10;02",
+  "allow24HourRollover": false
+}

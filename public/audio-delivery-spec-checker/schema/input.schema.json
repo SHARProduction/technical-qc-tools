@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sharprod.com/open-tools/audio-delivery-spec-checker/schema/input.schema.json",
+  "title": "Audio Delivery Spec Checker input",
+  "type": "object",
+  "description": "Check declared audio stems, channel layout, sample rate, bit depth and loudness targets against a chosen preset.",
+  "required": [
+    "preset",
+    "assets"
+  ],
+  "properties": {
+    "preset": {
+      "type": "object",
+      "required": [
+        "id",
+        "version",
+        "sampleRate",
+        "bitDepth",
+        "channelLayout",
+        "loudness",
+        "requiredStems"
+      ]
+    },
+    "assets": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": false
+}

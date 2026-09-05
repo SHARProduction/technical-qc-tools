@@ -1,0 +1,6 @@
+{
+  "frameRate": "25",
+  "dropFrame": false,
+  "startTimecode": "00:00:00:25",
+  "endTimecode": "00:00:01:00"
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sharprod.com/open-tools/frame-rate-timecode-validator/schema/input.schema.json",
+  "title": "Frame Rate and Timecode Validator input",
+  "type": "object",
+  "description": "Validate timecode syntax, ranges and drop-frame compatibility from metadata entered in-browser.",
+  "required": [
+    "frameRate",
+    "dropFrame",
+    "startTimecode",
+    "endTimecode"
+  ],
+  "properties": {
+    "frameRate": {
+      "enum": [
+        "23.976",
+        "24",
+        "25",
+        "29.97",
+        "30",
+        "50",
+        "59.94",
+        "60"
+      ]
+    },
+    "dropFrame": {
+      "type": "boolean"
+    },
+    "startTimecode": {
+      "type": "string"
+    },
+    "endTimecode": {
+      "type": "string"
+    },
+    "allow24HourRollover": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

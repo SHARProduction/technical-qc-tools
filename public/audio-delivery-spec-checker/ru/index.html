@@ -1,0 +1,42 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Проверка спецификации аудиосдачи · SHAR Production</title><meta name="description" content="Проверяет заявленные стемы, каналы, частоту, битность и loudness по выбранному пресету."><meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="../styles.css"><script type="module" src="../app.js"></script></head><body><nav><a class="brand" href="https://sharprod.com/"><span>SHAR</span> Production</a><div><a href="https://sharprod.com/open-tools/audio-delivery-spec-checker/en/" lang="en">EN</a><a href="https://sharprod.com/open-tools/audio-delivery-spec-checker/ru/" lang="ru">RU</a></div></nav><main><header><div class="eyebrow">shar-pe400-w01-10 · technical_qc</div><h1>Проверка спецификации аудиосдачи</h1><p>Проверяет заявленные стемы, каналы, частоту, битность и loudness по выбранному пресету.</p></header><section class="workbench" aria-label="Рабочая область"><div class="pane"><label for="input">Входные данные JSON</label><textarea id="input" spellcheck="false">{
+  &quot;preset&quot;: {
+    &quot;id&quot;: &quot;synthetic-web&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;sampleRate&quot;: 48000,
+    &quot;bitDepth&quot;: 24,
+    &quot;channelLayout&quot;: &quot;stereo&quot;,
+    &quot;loudness&quot;: {
+      &quot;unit&quot;: &quot;LUFS&quot;,
+      &quot;target&quot;: -16,
+      &quot;tolerance&quot;: 1
+    },
+    &quot;requiredStems&quot;: [
+      &quot;mix&quot;,
+      &quot;m&amp;e&quot;
+    ]
+  },
+  &quot;assets&quot;: [
+    {
+      &quot;id&quot;: &quot;mix.wav&quot;,
+      &quot;stem&quot;: &quot;mix&quot;,
+      &quot;sampleRate&quot;: 48000,
+      &quot;bitDepth&quot;: 24,
+      &quot;channelLayout&quot;: &quot;stereo&quot;,
+      &quot;loudness&quot;: {
+        &quot;unit&quot;: &quot;LUFS&quot;,
+        &quot;value&quot;: -16
+      }
+    },
+    {
+      &quot;id&quot;: &quot;me.wav&quot;,
+      &quot;stem&quot;: &quot;m&amp;e&quot;,
+      &quot;sampleRate&quot;: 48000,
+      &quot;bitDepth&quot;: 24,
+      &quot;channelLayout&quot;: &quot;stereo&quot;,
+      &quot;loudness&quot;: {
+        &quot;unit&quot;: &quot;LUFS&quot;,
+        &quot;value&quot;: -15.5
+      }
+    }
+  ]
+}</textarea><button id="run">Проверить</button></div><div class="pane"><label for="output">Отчёт</label><pre id="output" aria-live="polite"></pre></div></section><section class="notes"><div class="note"><strong>Детерминированные правила</strong><ul><li>Use versioned presets shipped as CC-BY-4.0 fixtures.</li><li>Compare metadata only; never claim signal analysis.</li><li>Require explicit loudness units and tolerance.</li></ul></div><div class="note"><strong>Границы</strong><p>Runs in the browser by default; no input upload, analytics, account or persistence.</p><p>Инструмент обрабатывает только введённые метаданные и не доказывает содержание файлов или медиа.</p></div></section><a class="cta" href="https://sharprod.com/">Обсудить задачу с SHAR Production ↗</a><p class="privacy">Не вставляйте персональные данные, доступы, подписи и конфиденциальные медиа. Данные остаются в браузере.</p></main><footer>SHAR Production · <a href="https://sharprod.com/">sharprod.com</a> · MIT · v1.0.0</footer></body></html>

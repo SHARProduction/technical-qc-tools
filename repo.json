@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0.0",
+  "repository": "technical-qc-tools",
+  "family": "technical_qc",
+  "state": "LOCAL_READY",
+  "publisher": {
+    "name": "SHAR Production",
+    "website": "https://sharprod.com/"
+  },
+  "assets": [
+    {
+      "asset_id": "shar-pe400-w01-09",
+      "slug": "frame-rate-timecode-validator",
+      "name": {
+        "en": "Frame Rate and Timecode Validator",
+        "ru": "Валидатор частоты кадров и таймкода"
+      },
+      "code_license": "MIT",
+      "fixtures_license": "CC-BY-4.0"
+    },
+    {
+      "asset_id": "shar-pe400-w01-10",
+      "slug": "audio-delivery-spec-checker",
+      "name": {
+        "en": "Audio Delivery Spec Checker",
+        "ru": "Проверка спецификации аудиосдачи"
+      },
+      "code_license": "MIT",
+      "fixtures_license": "CC-BY-4.0"
+    }
+  ]
+}
